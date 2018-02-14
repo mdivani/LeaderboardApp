@@ -1,0 +1,12 @@
+.img-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-decoration: none; 
+}
+
+.img-container__txt {
+    color: #244398;  
+    font-weight: 600;
+    cursor: pointer;
+}

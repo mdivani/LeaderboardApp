@@ -1,0 +1,17 @@
+.header {
+    margin: auto;
+    margin-bottom: 0;
+    width: $boardWidth;
+    max-width: $maxWidth;
+    text-align: center;
+    background: $headerColor;
+    border-radius: 4px 4px 0 0;
+
+} 
+
+.header__text {
+    padding: 5px;
+    color: white; 
+    cursor: pointer;
+    margin-bottom: 0;
+}

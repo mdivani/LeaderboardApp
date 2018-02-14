@@ -1,0 +1,76 @@
+.board {
+    border: 2px solid $borderColor;
+    background-color: white;
+    margin: auto; 
+    margin-top: 0px;
+    padding: 0;
+    box-sizing: border-box; 
+    border-collapse: collapse;
+    width: $boardWidth;
+    max-width: $maxWidth;
+    cursor: default;
+}
+
+.board__row {
+    text-align: center;
+    padding: 15px 20px;
+}
+
+.board__row:nth-child(even) {
+    background-color: $altRow;
+}
+
+.board__header {
+    border: 2px solid $borderColor;
+    color: $headerColor; 
+    font-size: $m-size;
+    padding: 5px 20px;
+    margin: 0; 
+}
+
+.board__header:nth-child(2) {
+    text-align: left; 
+}
+
+.board__header:nth-child(3), .board__header:nth-child(4) {
+    cursor: pointer;
+    position: relative;
+    width: 200px;     
+}
+
+.board__header:nth-child(2):hover, .board__header:nth-child(3):hover {
+    box-shadow: -1px 0px 5px 0px $borderColor, 1px 0px 5px 0px $borderColor;
+    border: 0px solid transparent;
+}
+
+.board__data {
+    font-family: verdana; 
+    font-size: $m-size;
+    padding: 3px; 
+    border: 2px solid $borderColor;
+}
+
+.header--active::before {
+    content: "";
+    position: absolute;
+    left: 5px; 
+    bottom: 10px; 
+    width: 0;
+    height: 0;
+    border: 3px solid;
+    border-color: $headerColor transparent transparent $headerColor;
+    transform: rotate(225deg);
+}
+
+.header--inactive::before {
+    content: "";
+    position: absolute;
+    left: 5px; 
+    bottom: 5px;
+    width: 0;
+    height: 0;
+    border: 3px solid;
+    border-color: $headerColor transparent transparent $headerColor;
+    transform: rotate(45deg);
+}
+
